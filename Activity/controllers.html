@@ -1,0 +1,23 @@
+<!DOCTYPE htmml>
+<html>
+	<head>
+		
+	</head>
+	<body>
+		<div class ="container" data-ng-controller="SimpleController">
+			<ul>
+			<li>
+			<h3>Adding a Simple Controller</h3>
+			{{cust.name}} - {{cust.city}}
+			</li>
+			</ul>
+		</div>
+		<script>
+			function SimpleController($scope){
+				$scope.customer = [
+				{name:'athalia',city:'iligan'},
+				{name:'johnrey',city:'cdo'}]
+			}
+		</script>
+	</body>
+ </html>
